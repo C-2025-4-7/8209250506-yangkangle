@@ -1,9 +1,9 @@
 #include<iostream>
-#include <string>
+#include <cstring>
 using namespace std;
 void count(const char s[], int counts[])
 {
-	for (int i = 0; i < sizeof(s); i++)
+	for (int i = 0; i < strlen(s); i++)
 	{
 		switch (s[i])
 		{
@@ -12,7 +12,7 @@ void count(const char s[], int counts[])
 		case 'c':case'C':counts[2]++;break;
 		case 'd':case'D':counts[3]++;break;
 		case 'e':case'E':counts[4]++;break;
-		case 'f':case'F':counts[5]++; break;
+		case 'f':case'F':counts[5]++;break;
 		case 'g':case'G':counts[6]++;break;
 		case 'h':case'H':counts[7]++;break;
 		case 'i':case'I':counts[8]++;break;
